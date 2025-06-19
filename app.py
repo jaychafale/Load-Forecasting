@@ -42,3 +42,13 @@ if st.button("Predict Load"):
     input_df = pd.DataFrame([input_data])
     prediction = model.predict(input_df)
     st.success(f"Predicted Load: {prediction[0]:.2f} MW")
+    
+from PIL import Image
+import streamlit as st
+
+st.header("📊 Power BI Dashboard Snapshot")
+
+# Load and show the dashboard image
+image = Image.open("image.jpg")
+st.image(image, caption="Power BI Dashboard (Static View)", use_column_width=True)
+

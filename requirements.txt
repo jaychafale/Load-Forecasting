@@ -4,3 +4,4 @@ xgboost
 joblib
 scikit-learn
 numpy
+Pillow
